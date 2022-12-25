@@ -12,11 +12,23 @@ Este trabajo pretende analizar la posible utilidad de DMPS en la aplicación de 
 
 
 -----------------------------------------------------------------------------------------
-Resultado de DMPS en la restauración de imágenes ruidosas.
+Resultado de DMPS en la restauración de imágenes ruidosas (denoising).
 
-![input-img](saved_results/model080000/deblur/gaussian/0.05/input/00004.png "Entrada")
-![deblur-gif1](saved_results/model080000/deblur/gaussian/0.05/gif/00004.gif "Reconstrucción")
-![truth-img](saved_results/model080000/deblur/gaussian/0.05/truth/00004.png "Original")
+![input-img](saved_results/model080000/denoise/gaussian/0.2/input/00001.png "Entrada")
+![deblur-gif1](saved_results/model080000/denoise/gaussian/0.2/gif/00001.gif "Reconstrucción")
+![truth-img](saved_results/model080000/denoise/gaussian/0.2/truth/00001.png "Original")
+
+Resultado de DMPS en la restauración de imágenes borrosas (deblurring).
+
+![input-img](saved_results/model080000/deblur/gaussian/0.05/input/00002.png "Entrada")
+![deblur-gif1](saved_results/model080000/deblur/gaussian/0.05/gif/00002.gif "Reconstrucción")
+![truth-img](saved_results/model080000/deblur/gaussian/0.05/truth/00002.png "Original")
+
+Resultado de DMPS en la superresolución x4 (Super-Resolution).
+
+![input-img](saved_results/model080000/super_resolution/x4/0.05/input/00004.png "Entrada")
+![deblur-gif1](saved_results/model080000/super_resolution/x4/0.05/00004.gif "Reconstrucción")
+![truth-img](saved_results/model080000/super_resolution/x4/0.05/truth/00004.png "Original")
 
 
 ## Requisitos previos
