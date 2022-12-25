@@ -18,6 +18,12 @@ Resultado de DMPS en la restauración de imágenes ruidosas.
 ![result-gif1](saved_results/model080000/deblur/gaussian/0.05/gif/00004.gif "image title")
 ![truth-img](saved_results/model080000/deblur/gaussian/0.05/truth/00004.png "image title")
 
+<figure>
+  <img
+  src="saved_results/model080000/deblur/gaussian/0.05/truth/00004.png"
+  alt="The beautiful MDN logo.">
+  <figcaption>MDN Logo</figcaption>
+</figure>
 
 ## Requisitos previos
 - python 3.8
