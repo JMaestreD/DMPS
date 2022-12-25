@@ -76,9 +76,7 @@ pip install blobfile
 Por último, asegúrese de que el código se ejecuta en un entorno con GPU  
 
 
-### Paso 2: Descargar un punto de control preentrenado
-For FFHQ, download the pretrained checkpoint "ffhq_10m.pt"  from  [link_ffhq_checkpoint](https://drive.google.com/drive/folders/1jElnRoFv7b31fG0v6pTSQkelbSX3xGZh?usp=sharing), and paste it to ./models/
-
+### Paso 2: Descargue un punto de control preentrenado
 
 Para el modelo de difusión incondicional de ImageNet con resolución 256x256 de OpenAI descargue 
 [256x256_diffusion_uncond.pt](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/256x256_diffusion_uncond.pt), 
@@ -86,61 +84,58 @@ para el modelo ADM de difusión incondicional entrenado sobre MRI descargue
 [model080000.pt](https://drive.google.com/file/d/1xw8uKK8OQEYzv2KuUg9wo-vMF7rwjr1D/view?usp=share_link)
 y péguelos en ./models/
 
-### Step 3:  Prepare the dataset
-You need to write your data directory at data.root. Default is ./data/samples which contains three sample images from FFHQ validation set. We also provide other demo data samples in ./data/ used in our paper.
+### Paso 3: Prepare el conjunto de datos
+Es necesario que escriba su directorio de datos en data.root. Por defecto es ./data/mri_256_orig que contiene diez imágenes de muestra del conjunto de validación MRI.
 
-### Step 4: Perform Posterior Sampling for different tasks 
+### Paso 4: Ejecución del muestreo posterior para diferentes tareas 
 
 ```
 python3 main.py \
---model_config=configs/model_config.yaml \
+--model_config=configs/model_config_mri.yaml \
 --diffusion_config=configs/diffusion_config.yaml \
---task_config={TASK-CONFIG};
---save_dir './saved_results'
+--task_config=configs/SR_config_mri.yaml \
+--save_dir='./saved_results' \
+--record \
+--video;
 ```
 
 
 
-## Possible model configurations
+## Configuración del modelo
 
 ```
-- configs/model_config.yaml 
-- configs/model_config_lsunbedroom.yaml
-- configs/model_config_lsuncat.yaml
-
+- configs/model_config_mri.yaml 
 ```
 
 
-## Possible task configurations
+## Posibles configuraciones de tareas
 ```
-# Various linear inverse problems
-- configs/sr4_config.yaml
-- configs/deblur_gauss_config.yaml
-- configs/deblur_uniform_config.yaml
-- configs/denoise_config.yaml
-- configs/color_config.yaml
-
+# Diversos problemas lineales inversos
+- configs/SR_config_mri.yaml
+- configs/denoise_config_mri.yaml
+- configs/mri_deblur_gauss_config.yaml
+- configs/mri_deblur_uniform_config.yaml
 ```
 
 
-## Citation 
-If you find the code useful for your research, please consider citing as 
+## Cita 
+Si encuentra el código útil para su investigación, por favor considere citarlo como  
 
 ```
+¿¿¿¿¿¿¿¿¿??????????
+```
+
+
+## Referencias
+
+Este repositorio se ha desarrollado a partir de [código DMPS](https://github.com/mengxiangming/dmps), [código DPS](https://github.com/DPS2022/diffusion-posterior-sampling) y [código DDRM](https://github.com/bahjat-kawar/ddrm). Por favor, considere citarlos si utiliza este repositorio. ```
+
 @article{meng2022diffusion,
   title={Diffusion Posterior Sampling for General Noisy Inverse Problems},
   author={Meng, Xiangming and Kabashima, Yoshiyuki},
   journal={arXiv preprint arXiv:2211.12343},
   year={2022}
 }
-
-```
-
-
-## References
-
-This repo is developed based on  [DPS code](https://github.com/DPS2022/diffusion-posterior-sampling) and  [DDRM code](https://github.com/bahjat-kawar/ddrm). Please also consider citing them if you use this repo. 
-```
 
 @inproceedings{kawar2022denoising,
     title={Denoising Diffusion Restoration Models},
