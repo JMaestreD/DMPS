@@ -15,14 +15,24 @@ Este trabajo pretende analizar la posible utilidad de DMPS en la aplicación de 
 Resultado de DMPS en la restauración de imágenes ruidosas.
 
 ![alt](saved_results/model080000/deblur/gaussian/0.05/input/00004.png "image title")
-![result-gif1](saved_results/model080000/deblur/gaussian/0.05/gif/00004.gif "image title")
+
 ![truth-img](saved_results/model080000/deblur/gaussian/0.05/truth/00004.png "image title")
 
 <figure>
+  <figcaption>Entrada</figcaption>
+  <img
+  src="saved_results/model080000/deblur/gaussian/0.05/input/00004.png"
+  alt="The beautiful MDN logo.">
+</figure>
+<figure>
+  <figcaption>Reconstrucción</figcaption>
+  ![result-gif1](saved_results/model080000/deblur/gaussian/0.05/gif/00004.gif "image title")
+</figure>
+<figure>
+  <figcaption>Original</figcaption>
   <img
   src="saved_results/model080000/deblur/gaussian/0.05/truth/00004.png"
-  alt="The beautiful MDN logo.">
-  <figcaption>MDN Logo</figcaption>
+  alt="Original">
 </figure>
 
 ## Requisitos previos
