@@ -17,7 +17,7 @@ Resultado de DMPS en la restauración de imágenes ruidosas.
 ![image](./saved_results/model080000/deblur/gaussian/0.05/input/00004.png)
 ![result-gif1](./saved_results/model080000/deblur/gaussian/0.05/gif/00004.gif)
 
-<gif-player src="https://media3.giphy.com/media/Y5DLjUZysisyA/giphy.gif" speed="1" play></gif-player>
+<gif-player src="./saved_results/model080000/deblur/gaussian/0.05/gif/00004.gif" speed="1" play></gif-player>
 ![image](./saved_results/model080000/deblur/gaussian/0.05/truth/00004.png)
 
 
