@@ -1,38 +1,41 @@
-# Pytorch Code for "Diffusion Model Based Posterior Samplng for Noisy Linear Inverse Problems"
+# Deep learning para la superresolución, reducción de ruido, mejora del desenfoque y borrosidad en tomogramas de resonancia magnética
 
-[Diffusion Model Based Posterior Samplng for Noisy Linear Inverse Problems](https://arxiv.org/abs/2211.12343)
-
-
-## Brief Summary ---
-Based on diffusion models (DM), we propose a general-purpose posterior sampler called diffusion model based posterior sampling (DMPS) to address the ubiquitous noisy linear inverse problems y = Ax + n. To address the intractability of exact noise-perturbed likelihood score, a simple yet effective noise-perturbed pseudo-likelihood score is introduced. 
-We evaluate the efficacy of DMPS on a variety of linear inverse problems such as image super-resolution, denoising, deblurring, colorization. Experimental results demonstrate that, for both in-distribution and out-of-distribution samples,  DMPS achieves highly competitive or even better performances on multiple tasks than the leading competitors. 
+Basado en [Diffusion Model Based Posterior Samplng for Noisy Linear Inverse Problems](https://arxiv.org/abs/2211.12343)
 
 
-**Extension**: A generalization of dmps to the GLM case with non-linear measurments, in particular quantized measurements, can be found in this [Quantized Compressed Sensing with Score-Based Generative Models](https://arxiv.org/abs/2211.13006) (code is avaliable at  [QCS-SGM](https://github.com/mengxiangming/QCS-SGM) )
+## Resumen
+Basado en los modelos de difusión (DM), [Xiangming Meng](https://github.com/mengxiangming/dmps) propone un muestreador posterior de propósito general llamado diffusion model based posterior sampling (DMPS) para abordar los omnipresentes problemas inversos lineales ruidosos y = Ax + n. Para hacer frente a la intratabilidad de la puntuación de verosimilitud exacta perturbada por el ruido, se introduce una puntuación de pseudoverosimilitud simple pero eficaz. Evalua la eficacia de DMPS en una variedad de problemas inversos lineales como la superresolución de imágenes, la eliminación de ruido, la eliminación de borrosidad y desenfoque y el coloreado.
 
-**Notice**: While we did not provide examples of DMPS on (unquantized) compressed sensing, its application in CS is straightforward and the associated results will be updated soon. For a first reference, please refer to the Appendix of [Quantized Compressed Sensing with Score-Based Generative Models](https://arxiv.org/abs/2211.13006). 
+
+
+Este trabajo pretende analizar la posible utilidad de DMPS en la aplicación de eliminación de ruido (image denoising), superresolución (super-resolution) y reducción del desenfoque y borrosidad (image deblurring), en imágenes médicas procedentes de resonancia magnética (RMI)
+
 
 -----------------------------------------------------------------------------------------
-Results of DMPS on different tasks in noisy image restoration. 
-![cover-img](./figures/cover.png)
+Results of DMPS on different tasks in noisy image restoration.
+
+![result-gif1](./saved_results\model080000\deblur\gaussian\0.05\gif/00001.gif)
 
 
-## Prerequisites
+## Requisitos previos
 - python 3.8
 
 - pytorch 1.11.0
 
-- CUDA 11.3.1 (other version is also fine)
+- CUDA 11.3.1 (o posterior)
 
 
-## Getting started 
+## Primeros pasos 
 
 
 
 ### Step 1: Set environment
 
-Create a new environment and install dependencies
+Realice una copia de este repositorio en una unidad DRIVE de google.
 
+Abra mediante google colab el cuaderno jupyter DMPS.ipynb. Ejecútelo en un entorno con GPU. Se instalarán las dependencias, etc.
+
+#### Alternativamente si desea realizar estos primeros pasos manualmente
 ```
 conda create -n DMPS python=3.8
 
@@ -43,19 +46,19 @@ pip install -r requirements.txt
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
 ```
 
-If you fail to install mpi4py using the pip install, you can try conda as follows
+Si no consigue instalar mpi4py mediante pip install, puede probar conda de la siguiente manera
 ```
 conda install mpi4py
 ```
 
-In addition, you might need 
+Además, es posible que necesite
 
 ```
 pip install scikit-image
 pip install blobfile
 ```
 
-Finally, make sure the code is run on GPU, though it can run on cpu as well.  
+Por último, asegúrese de que el código se ejecuta en la GPU  
 
 
 ### Step 2:  Download pretrained checkpoint
