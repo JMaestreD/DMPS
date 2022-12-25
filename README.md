@@ -44,7 +44,7 @@ Resultado de DMPS en la superresolución x4 (Super-Resolution) con ruido gausian
 
 
 
-### Step 1: Set environment
+### Paso 1: Configurar el entorno
 
 Realice una copia de este repositorio en una unidad DRIVE de google.
 
@@ -73,14 +73,18 @@ pip install scikit-image
 pip install blobfile
 ```
 
-Por último, asegúrese de que el código se ejecuta en la GPU  
+Por último, asegúrese de que el código se ejecuta en un entorno con GPU  
 
 
-### Step 2:  Download pretrained checkpoint
+### Paso 2: Descargar un punto de control preentrenado
 For FFHQ, download the pretrained checkpoint "ffhq_10m.pt"  from  [link_ffhq_checkpoint](https://drive.google.com/drive/folders/1jElnRoFv7b31fG0v6pTSQkelbSX3xGZh?usp=sharing), and paste it to ./models/
 
 
-For LSUN bedroom and LSUN cat, download the pretrained checkpoints "lsun_bedroom.pt"  and  "lsun_cat.pt"  from  [link_lsun_checkpoint](https://github.com/openai/guided-diffusion), , and paste it to ./models/
+Para el modelo de difusión incondicional de ImageNet con resolución 256x256 de OpenAI descargue 
+[256x256_diffusion_uncond.pt](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/256x256_diffusion_uncond.pt), 
+para el modelo ADM de difusión incondicional entrenado sobre MRI descargue 
+[model080000.pt](https://drive.google.com/file/d/1xw8uKK8OQEYzv2KuUg9wo-vMF7rwjr1D/view?usp=share_link)
+y péguelos en ./models/
 
 ### Step 3:  Prepare the dataset
 You need to write your data directory at data.root. Default is ./data/samples which contains three sample images from FFHQ validation set. We also provide other demo data samples in ./data/ used in our paper.
