@@ -26,6 +26,7 @@ Resultado de DMPS en la restauración de imágenes borrosas (deblurring).
 
 Resultado de DMPS en la superresolución x4 (Super-Resolution).
 
+<img src="saved_results/model080000/super_resolution/x4/0.05/input/00004.png" alt="drawing" style="width:200px;"/>
 ![sr-input-img](saved_results/model080000/super_resolution/x4/0.05/input/00004.png "Entrada")
 ![sr-deblur-gif](saved_results/model080000/super_resolution/x4/0.05/gif/00004.gif "Reconstrucción")
 ![sr-truth-img](saved_results/model080000/super_resolution/x4/0.05/truth/00004.png "Original")
