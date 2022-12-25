@@ -14,4 +14,4 @@ measurement:
   
   noise: 
     name: gaussian # choices: gaussian, poisson
-    sigma: 0.2
+    sigma: 0.75

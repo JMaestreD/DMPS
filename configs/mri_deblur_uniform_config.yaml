@@ -5,7 +5,7 @@ conditioning:
 
 data:
   name: mri # choices: mri, ffhq, bedroom, cat, celeba-hq
-  root: ./data/mri_256_GroundTruth/ # address to put the associated images
+  root: ./data/mri_256_orig/ # address to put the associated images
 
 measurement:
   operator:
