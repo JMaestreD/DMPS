@@ -13,12 +13,8 @@ Este trabajo pretende analizar la posible utilidad de DMPS en la aplicación de 
 
 -----------------------------------------------------------------------------------------
 Resultado de DMPS en la restauración de imágenes ruidosas.
-
 ![sample1](saved_results/model080000/deblur/gaussian/0.05/input/00004.png)
-
-
 ![sample2](saved_results/model080000/deblur/gaussian/0.05/truth/00004.png)
-
 
 ## Requisitos previos
 - python 3.8
