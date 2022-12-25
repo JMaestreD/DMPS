@@ -118,12 +118,6 @@ python3 main.py \
 ```
 
 
-## Cita 
-Si encuentra el código útil para su investigación, por favor considere citarlo como  
-
-```
-¿¿¿¿¿¿¿¿¿??????????
-```
 
 
 ## Referencias
