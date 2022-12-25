@@ -13,10 +13,9 @@ Este trabajo pretende analizar la posible utilidad de DMPS en la aplicación de 
 
 -----------------------------------------------------------------------------------------
 Resultado de DMPS en la restauración de imágenes ruidosas.
-![cover-img](./figures/cover.png)
-![cover-img](./figures/cover.png)
-![cover-img](./figures/cover.png)
+
 ![input-img](saved_results/model080000/deblur/gaussian/0.05/input/00004.png)
+![result-gif1](./saved_results/model080000/deblur/gaussian/0.05/gif/00004.gif)
 ![truth-img](saved_results/model080000/deblur/gaussian/0.05/truth/00004.png)
 
 
@@ -28,7 +27,6 @@ Resultado de DMPS en la restauración de imágenes ruidosas.
 - CUDA 11.3.1 (o posterior)
 
 
-![result-gif1](./saved_results/model080000/deblur/gaussian/0.05/gif/00004.gif)
 
 
 ## Primeros pasos 
