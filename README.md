@@ -124,7 +124,7 @@ python3 main.py \
 Si encuentra el código útil para su investigación, por favor considere citarlo como  
 
 ```
-¿¿¿¿¿¿¿¿¿??????????
+
 ```
 
 
