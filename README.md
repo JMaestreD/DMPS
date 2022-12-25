@@ -30,6 +30,8 @@ Resultado de DMPS en la superresolución x4 (Super-Resolution) con ruido gausian
 |--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | <img src="saved_results/model080000/super_resolution/x4/0.05/input/00004.png" alt="Entrada" style="width:256px;"/> | ![sr-deblur-gif](saved_results/model080000/super_resolution/x4/0.05/gif/00004.gif "Reconstrucción") | ![sr-truth-img](saved_results/model080000/super_resolution/x4/0.05/truth/00004.png "Original") |
 
+-----------------------------------------------------------------------------------------
+
 ## Requisitos previos
 - python 3.8
 
@@ -118,11 +120,19 @@ python3 main.py \
 ```
 
 
+## Cita 
+Si encuentra el código útil para su investigación, por favor considere citarlo como  
+
+```
+¿¿¿¿¿¿¿¿¿??????????
+```
 
 
 ## Referencias
 
-Este repositorio se ha desarrollado a partir de [código DMPS](https://github.com/mengxiangming/dmps), [código DPS](https://github.com/DPS2022/diffusion-posterior-sampling) y [código DDRM](https://github.com/bahjat-kawar/ddrm). Por favor, considere citarlos si utiliza este repositorio. ```
+Este repositorio se ha desarrollado a partir de [código DMPS](https://github.com/mengxiangming/dmps), [código DPS](https://github.com/DPS2022/diffusion-posterior-sampling) y [código DDRM](https://github.com/bahjat-kawar/ddrm). Por favor, considere citarlos si utiliza este repositorio.
+
+```
 
 @article{meng2022diffusion,
   title={Diffusion Posterior Sampling for General Noisy Inverse Problems},
