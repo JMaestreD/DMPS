@@ -14,19 +14,17 @@ Este trabajo pretende analizar la posible utilidad de DMPS en la aplicación de 
 -----------------------------------------------------------------------------------------
 Resultado de DMPS en la restauración de imágenes ruidosas (denoising).
 
-![denoise-input-img](saved_results/model080000/denoise/gaussian/0.2/input/00001.png "Entrada")
-![denoise-gif](saved_results/model080000/denoise/gaussian/0.2/gif/00001.gif "Reconstrucción")
-![denoise-truth-img](saved_results/model080000/denoise/gaussian/0.2/truth/00001.png "Original")
+| Gaussian blured                                                                               | Reconstrucción                                                                               | Original                                                                                       |
+|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| ![denoise-input-img](saved_results/model080000/denoise/gaussian/0.2/input/00001.png "Entrada") | ![denoise-gif](saved_results/model080000/denoise/gaussian/0.2/gif/00001.gif "Reconstrucción") | ![denoise-truth-img](saved_results/model080000/denoise/gaussian/0.2/truth/00001.png "Original") |
 
 Resultado de DMPS en la restauración de imágenes borrosas (deblurring).
 
-![deblur-input-img](saved_results/model080000/deblur/gaussian/0.05/input/00002.png "Entrada")
-![deblur-gif](saved_results/model080000/deblur/gaussian/0.05/gif/00002.gif "Reconstrucción")
-![deblur-truth-img](saved_results/model080000/deblur/gaussian/0.05/truth/00002.png "Original")
+| Gaussian blured                                                                               | Reconstrucción                                                                               | Original                                                                                       |
+|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| ![deblur-input-img](saved_results/model080000/deblur/gaussian/0.05/input/00002.png "Entrada") | ![deblur-gif](saved_results/model080000/deblur/gaussian/0.05/gif/00002.gif "Reconstrucción") | ![deblur-truth-img](saved_results/model080000/deblur/gaussian/0.05/truth/00002.png "Original") |
 
 Resultado de DMPS en la superresolución x4 (Super-Resolution).
-
-
 
 | LR -  64x64                                                                                                        | SR x4 - 256x256                                                                                     | Original                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
