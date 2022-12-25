@@ -26,12 +26,11 @@ Resultado de DMPS en la restauración de imágenes borrosas (deblurring).
 
 Resultado de DMPS en la superresolución x4 (Super-Resolution).
 
-<img src="saved_results/model080000/super_resolution/x4/0.05/input/00004.png" alt="drawing" style="width:256px;"/>
 
-![sr-input-img](saved_results/model080000/super_resolution/x4/0.05/input/00004.png "Entrada")
-![sr-deblur-gif](saved_results/model080000/super_resolution/x4/0.05/gif/00004.gif "Reconstrucción")
-![sr-truth-img](saved_results/model080000/super_resolution/x4/0.05/truth/00004.png "Original")
 
+| LR -  64x64                                                                                                        | SR x4 - 256x256                                                                                     | Original                                                                                       |
+|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| <img src="saved_results/model080000/super_resolution/x4/0.05/input/00004.png" alt="Entrada" style="width:256px;"/> | ![sr-deblur-gif](saved_results/model080000/super_resolution/x4/0.05/gif/00004.gif "Reconstrucción") | ![sr-truth-img](saved_results/model080000/super_resolution/x4/0.05/truth/00004.png "Original") |
 
 ## Requisitos previos
 - python 3.8
