@@ -14,9 +14,9 @@ Este trabajo pretende analizar la posible utilidad de DMPS en la aplicación de 
 -----------------------------------------------------------------------------------------
 Results of DMPS on different tasks in noisy image restoration.
 
-![result-gif1](./saved_results/model080000/deblur/gaussian/0.05/gif/00001.gif)
-![result-gif1](./saved_results/model080000/deblur/gaussian/0.05/gif/00001.gif)
-![result-gif1](./saved_results/model080000/deblur/gaussian/0.05/gif/00001.gif)
+![result-gif1](./saved_results/model080000/deblur/gaussian/0.05/gif/00002.gif)
+![result-gif1](./saved_results/model080000/deblur/gaussian/0.05/gif/00004.gif)
+![result-gif1](./saved_results/model080000/deblur/gaussian/0.05/gif/00005.gif)
 
 
 ## Requisitos previos
