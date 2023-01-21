@@ -124,7 +124,15 @@ python3 main.py \
 Si encuentra el código útil para su investigación, por favor considere citarlo como  
 
 ```
-¿¿¿¿¿¿¿¿¿??????????
+@mastersthesis{maestre-deusto_deep_2023,
+	title = {Deep learning para la superresolución, reducción de ruido, mejora del desenfoque y borrosidad en tomogramas de resonancia magnética.},
+	language = {Español},
+	school = {Universitat Oberta de Catalunya},
+	author = {Maestre-Deusto, F. Javier},
+	month = jan,
+	year = {2023},
+}
+
 ```
 
 
